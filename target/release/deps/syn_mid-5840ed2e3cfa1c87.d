@@ -1,0 +1,11 @@
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/syn_mid-5840ed2e3cfa1c87.rmeta: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/macros.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/arg.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/pat.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/path.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/libsyn_mid-5840ed2e3cfa1c87.rlib: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/macros.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/arg.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/pat.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/path.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/syn_mid-5840ed2e3cfa1c87.d: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/macros.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/arg.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/pat.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/path.rs
+
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/lib.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/macros.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/arg.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/pat.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/syn-mid-0.5.0/src/path.rs:

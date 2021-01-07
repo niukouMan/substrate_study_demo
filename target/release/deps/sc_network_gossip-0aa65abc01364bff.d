@@ -1,0 +1,10 @@
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/sc_network_gossip-0aa65abc01364bff.rmeta: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/sc-network-gossip-0.8.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/sc-network-gossip-0.8.0/src/bridge.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/sc-network-gossip-0.8.0/src/state_machine.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/sc-network-gossip-0.8.0/src/validator.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/libsc_network_gossip-0aa65abc01364bff.rlib: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/sc-network-gossip-0.8.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/sc-network-gossip-0.8.0/src/bridge.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/sc-network-gossip-0.8.0/src/state_machine.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/sc-network-gossip-0.8.0/src/validator.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/sc_network_gossip-0aa65abc01364bff.d: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/sc-network-gossip-0.8.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/sc-network-gossip-0.8.0/src/bridge.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/sc-network-gossip-0.8.0/src/state_machine.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/sc-network-gossip-0.8.0/src/validator.rs
+
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/sc-network-gossip-0.8.0/src/lib.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/sc-network-gossip-0.8.0/src/bridge.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/sc-network-gossip-0.8.0/src/state_machine.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/sc-network-gossip-0.8.0/src/validator.rs:

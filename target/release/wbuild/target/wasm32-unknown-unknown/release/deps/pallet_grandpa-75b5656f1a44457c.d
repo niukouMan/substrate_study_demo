@@ -1,0 +1,9 @@
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild/target/wasm32-unknown-unknown/release/deps/pallet_grandpa-75b5656f1a44457c.rmeta: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/pallet-grandpa-2.0.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/pallet-grandpa-2.0.0/src/equivocation.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/pallet-grandpa-2.0.0/src/default_weights.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild/target/wasm32-unknown-unknown/release/deps/libpallet_grandpa-75b5656f1a44457c.rlib: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/pallet-grandpa-2.0.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/pallet-grandpa-2.0.0/src/equivocation.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/pallet-grandpa-2.0.0/src/default_weights.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild/target/wasm32-unknown-unknown/release/deps/pallet_grandpa-75b5656f1a44457c.d: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/pallet-grandpa-2.0.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/pallet-grandpa-2.0.0/src/equivocation.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/pallet-grandpa-2.0.0/src/default_weights.rs
+
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/pallet-grandpa-2.0.0/src/lib.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/pallet-grandpa-2.0.0/src/equivocation.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/pallet-grandpa-2.0.0/src/default_weights.rs:

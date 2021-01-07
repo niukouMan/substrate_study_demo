@@ -1,0 +1,1 @@
+{"rustc":10702914951423426341,"features":"[\"std\"]","target":6572613435054609512,"profile":4339006351771724982,"path":1642522834103492140,"deps":[[17522055216433409306,"signature",false,15228826967425385363]],"local":[{"CheckDepInfo":{"dep_info":"release/.fingerprint/ed25519-1999665568ef538b/dep-lib-ed25519"}}],"rustflags":[],"metadata":1034586318912629355,"config":0}

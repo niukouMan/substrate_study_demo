@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/build/typenum-6a0a1665dc8d1ba6/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/build/typenum-6a0a1665dc8d1ba6/out/op.rs

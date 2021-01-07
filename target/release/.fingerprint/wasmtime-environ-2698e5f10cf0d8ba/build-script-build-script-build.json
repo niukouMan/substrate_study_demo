@@ -1,0 +1,1 @@
+{"rustc":10702914951423426341,"features":"[\"parallel-compilation\", \"rayon\"]","target":10429514197457385088,"profile":10803726696109476711,"path":683270338360532608,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"release/.fingerprint/wasmtime-environ-2698e5f10cf0d8ba/dep-build-script-build-script-build"}}],"rustflags":[],"metadata":4771859052593548345,"config":0}

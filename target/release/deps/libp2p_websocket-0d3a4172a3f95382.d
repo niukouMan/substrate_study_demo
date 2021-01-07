@@ -1,0 +1,10 @@
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/libp2p_websocket-0d3a4172a3f95382.rmeta: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/libp2p-websocket-0.23.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/libp2p-websocket-0.23.0/src/error.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/libp2p-websocket-0.23.0/src/framed.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/libp2p-websocket-0.23.0/src/tls.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/liblibp2p_websocket-0d3a4172a3f95382.rlib: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/libp2p-websocket-0.23.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/libp2p-websocket-0.23.0/src/error.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/libp2p-websocket-0.23.0/src/framed.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/libp2p-websocket-0.23.0/src/tls.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/libp2p_websocket-0d3a4172a3f95382.d: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/libp2p-websocket-0.23.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/libp2p-websocket-0.23.0/src/error.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/libp2p-websocket-0.23.0/src/framed.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/libp2p-websocket-0.23.0/src/tls.rs
+
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/libp2p-websocket-0.23.0/src/lib.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/libp2p-websocket-0.23.0/src/error.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/libp2p-websocket-0.23.0/src/framed.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/libp2p-websocket-0.23.0/src/tls.rs:

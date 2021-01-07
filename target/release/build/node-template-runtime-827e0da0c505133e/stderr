@@ -1,0 +1,15 @@
+    Finished release [optimized] target(s) in 0.02s
+     Running `/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild-runner/node-template-runtime4040409835901987397/target/x86_64-apple-darwin/release/wasm-build-runner-impl`
+[0m[1m[33mwarning[0m[0m[1m: method `sendClaim` should have a snake case name[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0m/Users/collin/collin/code/substrate-template/substrate-node-template/pallets/poe/src/lib.rs:106:10[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m106[0m[0m [0m[0m[1m[38;5;12m| [0m[0m        pub fn sendClaim(origin,claim : Vec<u8>, recever_id : T::AccountId)-> DispatchResult{[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m               [0m[0m[1m[33m^^^^^^^^^[0m[0m [0m[0m[1m[33mhelp: convert the identifier to snake case: `send_claim`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(non_snake_case)]` on by default[0m
+
+[0m[1m[33mwarning[0m[0m[1m: 1 warning emitted[0m
+
+[0m[0m[1m[32m   Compiling[0m node-template-runtime v2.0.0 (/Users/collin/collin/code/substrate-template/substrate-node-template/runtime)
+[0m[0m[1m[32m   Compiling[0m node-template-runtime-wasm v1.0.0 (/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild/node-template-runtime)
+[0m[0m[1m[32m    Finished[0m release [optimized] target(s) in 5.57s

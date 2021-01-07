@@ -1,0 +1,10 @@
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/futures_lite-3b553ded30833a4c.rmeta: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/futures-lite-0.1.10/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/futures-lite-0.1.10/src/future.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/futures-lite-0.1.10/src/io.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/futures-lite-0.1.10/src/stream.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/libfutures_lite-3b553ded30833a4c.rlib: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/futures-lite-0.1.10/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/futures-lite-0.1.10/src/future.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/futures-lite-0.1.10/src/io.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/futures-lite-0.1.10/src/stream.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/futures_lite-3b553ded30833a4c.d: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/futures-lite-0.1.10/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/futures-lite-0.1.10/src/future.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/futures-lite-0.1.10/src/io.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/futures-lite-0.1.10/src/stream.rs
+
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/futures-lite-0.1.10/src/lib.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/futures-lite-0.1.10/src/future.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/futures-lite-0.1.10/src/io.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/futures-lite-0.1.10/src/stream.rs:

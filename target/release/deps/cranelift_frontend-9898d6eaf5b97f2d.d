@@ -1,0 +1,13 @@
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/cranelift_frontend-9898d6eaf5b97f2d.rmeta: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/frontend.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/ssa.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/switch.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/variable.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/libcranelift_frontend-9898d6eaf5b97f2d.rlib: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/frontend.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/ssa.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/switch.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/variable.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/cranelift_frontend-9898d6eaf5b97f2d.d: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/frontend.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/ssa.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/switch.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/variable.rs
+
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/lib.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/frontend.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/ssa.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/switch.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/cranelift-frontend-0.66.0/src/variable.rs:
+
+# env-dep:CARGO_PKG_VERSION=0.66.0

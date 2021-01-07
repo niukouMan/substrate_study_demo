@@ -1,0 +1,9 @@
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/substrate_prometheus_endpoint-784c274a7658fc4f.rmeta: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/substrate-prometheus-endpoint-0.8.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/substrate-prometheus-endpoint-0.8.0/src/networking.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/substrate-prometheus-endpoint-0.8.0/src/sourced.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/libsubstrate_prometheus_endpoint-784c274a7658fc4f.rlib: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/substrate-prometheus-endpoint-0.8.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/substrate-prometheus-endpoint-0.8.0/src/networking.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/substrate-prometheus-endpoint-0.8.0/src/sourced.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/substrate_prometheus_endpoint-784c274a7658fc4f.d: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/substrate-prometheus-endpoint-0.8.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/substrate-prometheus-endpoint-0.8.0/src/networking.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/substrate-prometheus-endpoint-0.8.0/src/sourced.rs
+
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/substrate-prometheus-endpoint-0.8.0/src/lib.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/substrate-prometheus-endpoint-0.8.0/src/networking.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/substrate-prometheus-endpoint-0.8.0/src/sourced.rs:

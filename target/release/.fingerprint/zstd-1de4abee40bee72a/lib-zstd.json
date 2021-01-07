@@ -1,0 +1,1 @@
+{"rustc":14140201583299346137,"features":"[\"default\", \"legacy\"]","target":3161697258704865047,"profile":4339006351771724982,"path":3780168797550910738,"deps":[[10444170260529207297,"zstd_safe",false,13361455418805691133]],"local":[{"CheckDepInfo":{"dep_info":"release/.fingerprint/zstd-1de4abee40bee72a/dep-lib-zstd"}}],"rustflags":[],"metadata":9485688690311560389,"config":0}

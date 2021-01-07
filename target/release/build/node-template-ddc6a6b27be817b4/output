@@ -1,0 +1,4 @@
+cargo:rustc-env=SUBSTRATE_CLI_IMPL_VERSION=2.0.0-4d97032-x86_64-macos
+cargo:rerun-if-changed=/Users/collin/collin/code/substrate-template/substrate-node-template/.git/HEAD
+cargo:rerun-if-changed=/Users/collin/collin/code/substrate-template/substrate-node-template/.git/refs/heads/master
+

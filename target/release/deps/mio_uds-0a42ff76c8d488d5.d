@@ -1,0 +1,11 @@
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/mio_uds-0a42ff76c8d488d5.rmeta: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/datagram.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/listener.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/socket.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/stream.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/libmio_uds-0a42ff76c8d488d5.rlib: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/datagram.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/listener.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/socket.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/stream.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/mio_uds-0a42ff76c8d488d5.d: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/datagram.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/listener.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/socket.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/stream.rs
+
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/lib.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/datagram.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/listener.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/socket.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/mio-uds-0.6.8/src/stream.rs:

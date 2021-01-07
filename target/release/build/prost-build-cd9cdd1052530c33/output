@@ -1,0 +1,4 @@
+cargo:rustc-env=PROTOC=/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/prost-build-0.6.1/third-party/protobuf/protoc-osx-x86_64
+cargo:rustc-env=PROTOC_INCLUDE=/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/prost-build-0.6.1/third-party/protobuf/include
+cargo:rerun-if-env-changed=PROTOC
+cargo:rerun-if-env-changed=PROTOC_INCLUDE

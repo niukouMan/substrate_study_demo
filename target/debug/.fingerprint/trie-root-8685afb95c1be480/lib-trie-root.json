@@ -1,0 +1,1 @@
+{"rustc":10702914951423426341,"features":"[\"std\"]","target":12845798766216448940,"profile":6299028598154287785,"path":6460136837207148208,"deps":[[9676091558866788818,"hash_db",false,9735471047539325387]],"local":[{"CheckDepInfo":{"dep_info":"debug/.fingerprint/trie-root-8685afb95c1be480/dep-lib-trie-root"}}],"rustflags":[],"metadata":17652320270180611764,"config":0}

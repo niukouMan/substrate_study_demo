@@ -1,0 +1,1 @@
+{"rustc":14140201583299346137,"features":"[\"alloc\"]","target":14265717639797181385,"profile":4339006351771724982,"path":16978582317386563151,"deps":[[4182333651058539064,"zeroize",false,6380353566549808287]],"local":[{"CheckDepInfo":{"dep_info":"release/.fingerprint/secrecy-a49f2362abc68b51/dep-lib-secrecy"}}],"rustflags":[],"metadata":13344869583424542890,"config":0}

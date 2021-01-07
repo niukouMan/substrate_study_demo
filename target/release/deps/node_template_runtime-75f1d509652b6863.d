@@ -1,0 +1,12 @@
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/node_template_runtime-75f1d509652b6863.rmeta: runtime/src/lib.rs /Users/collin/collin/code/substrate-template/substrate-node-template/target/release/build/node-template-runtime-827e0da0c505133e/out/wasm_binary.rs /Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild/node-template-runtime/node_template_runtime.compact.wasm /Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild/target/wasm32-unknown-unknown/release/node_template_runtime.wasm
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/libnode_template_runtime-75f1d509652b6863.rlib: runtime/src/lib.rs /Users/collin/collin/code/substrate-template/substrate-node-template/target/release/build/node-template-runtime-827e0da0c505133e/out/wasm_binary.rs /Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild/node-template-runtime/node_template_runtime.compact.wasm /Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild/target/wasm32-unknown-unknown/release/node_template_runtime.wasm
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/node_template_runtime-75f1d509652b6863.d: runtime/src/lib.rs /Users/collin/collin/code/substrate-template/substrate-node-template/target/release/build/node-template-runtime-827e0da0c505133e/out/wasm_binary.rs /Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild/node-template-runtime/node_template_runtime.compact.wasm /Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild/target/wasm32-unknown-unknown/release/node_template_runtime.wasm
+
+runtime/src/lib.rs:
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/build/node-template-runtime-827e0da0c505133e/out/wasm_binary.rs:
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild/node-template-runtime/node_template_runtime.compact.wasm:
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild/target/wasm32-unknown-unknown/release/node_template_runtime.wasm:
+
+# env-dep:OUT_DIR=/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/build/node-template-runtime-827e0da0c505133e/out

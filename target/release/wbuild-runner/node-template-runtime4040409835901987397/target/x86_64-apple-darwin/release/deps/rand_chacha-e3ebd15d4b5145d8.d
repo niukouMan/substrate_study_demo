@@ -1,0 +1,9 @@
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild-runner/node-template-runtime4040409835901987397/target/x86_64-apple-darwin/release/deps/rand_chacha-e3ebd15d4b5145d8.rmeta: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rand_chacha-0.2.2/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rand_chacha-0.2.2/src/chacha.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rand_chacha-0.2.2/src/guts.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild-runner/node-template-runtime4040409835901987397/target/x86_64-apple-darwin/release/deps/librand_chacha-e3ebd15d4b5145d8.rlib: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rand_chacha-0.2.2/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rand_chacha-0.2.2/src/chacha.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rand_chacha-0.2.2/src/guts.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild-runner/node-template-runtime4040409835901987397/target/x86_64-apple-darwin/release/deps/rand_chacha-e3ebd15d4b5145d8.d: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rand_chacha-0.2.2/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rand_chacha-0.2.2/src/chacha.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rand_chacha-0.2.2/src/guts.rs
+
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rand_chacha-0.2.2/src/lib.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rand_chacha-0.2.2/src/chacha.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rand_chacha-0.2.2/src/guts.rs:

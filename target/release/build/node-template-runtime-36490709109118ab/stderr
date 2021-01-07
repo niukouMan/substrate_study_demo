@@ -1,0 +1,175 @@
+    Updating `git://mirrors.ustc.edu.cn/crates.io-index` index
+ Downloading crates ...
+  Downloaded cargo_metadata v0.10.0 (registry `git://mirrors.ustc.edu.cn/crates.io-index`)
+  Downloaded cfg-if v1.0.0 (registry `git://mirrors.ustc.edu.cn/crates.io-index`)
+  Downloaded getrandom v0.1.16 (registry `git://mirrors.ustc.edu.cn/crates.io-index`)
+  Downloaded itoa v0.4.7 (registry `git://mirrors.ustc.edu.cn/crates.io-index`)
+  Downloaded ppv-lite86 v0.2.10 (registry `git://mirrors.ustc.edu.cn/crates.io-index`)
+  Downloaded proc-macro2 v1.0.24 (registry `git://mirrors.ustc.edu.cn/crates.io-index`)
+  Downloaded libc v0.2.81 (registry `git://mirrors.ustc.edu.cn/crates.io-index`)
+  Downloaded rustc-demangle v0.1.18 (registry `git://mirrors.ustc.edu.cn/crates.io-index`)
+  Downloaded quote v1.0.8 (registry `git://mirrors.ustc.edu.cn/crates.io-index`)
+  Downloaded serde v1.0.118 (registry `git://mirrors.ustc.edu.cn/crates.io-index`)
+  Downloaded serde_derive v1.0.118 (registry `git://mirrors.ustc.edu.cn/crates.io-index`)
+  Downloaded serde_json v1.0.61 (registry `git://mirrors.ustc.edu.cn/crates.io-index`)
+  Downloaded substrate-wasm-builder v2.0.1 (registry `git://mirrors.ustc.edu.cn/crates.io-index`)
+  Downloaded toml v0.5.8 (registry `git://mirrors.ustc.edu.cn/crates.io-index`)
+  Downloaded syn v1.0.58 (registry `git://mirrors.ustc.edu.cn/crates.io-index`)
+   Compiling libc v0.2.81
+   Compiling proc-macro2 v1.0.24
+   Compiling serde v1.0.118
+   Compiling getrandom v0.1.16
+   Compiling unicode-xid v0.2.1
+   Compiling cfg-if v1.0.0
+   Compiling semver-parser v0.7.0
+   Compiling ryu v1.0.5
+   Compiling byteorder v1.3.4
+   Compiling syn v1.0.58
+   Compiling cfg-if v0.1.10
+   Compiling log v0.4.11
+   Compiling serde_derive v1.0.118
+   Compiling ppv-lite86 v0.2.10
+   Compiling serde_json v1.0.61
+   Compiling itoa v0.4.7
+   Compiling same-file v1.0.6
+   Compiling either v1.6.1
+   Compiling remove_dir_all v0.5.3
+   Compiling rustc-demangle v0.1.18
+   Compiling ansi_term v0.12.1
+   Compiling semver v0.6.0
+   Compiling walkdir v2.3.1
+   Compiling itertools v0.8.2
+   Compiling build-helper v0.1.1
+   Compiling fs2 v0.4.3
+   Compiling atty v0.2.14
+   Compiling quote v1.0.8
+   Compiling semver v0.9.0
+   Compiling toml v0.5.8
+   Compiling parity-wasm v0.32.0
+   Compiling rand_core v0.5.1
+   Compiling wasm-gc-api v0.1.11
+   Compiling rand_chacha v0.2.2
+   Compiling rand v0.7.3
+   Compiling tempfile v3.1.0
+   Compiling cargo_metadata v0.10.0
+   Compiling substrate-wasm-builder v2.0.1
+   Compiling wasm-build-runner-impl v1.0.0 (/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild-runner/node-template-runtime4040409835901987397)
+    Finished release [optimized] target(s) in 2m 19s
+     Running `/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild-runner/node-template-runtime4040409835901987397/target/x86_64-apple-darwin/release/wasm-build-runner-impl`
+[0m[0m[1m[32m   Compiling[0m proc-macro2 v1.0.19
+[0m[0m[1m[32m   Compiling[0m unicode-xid v0.2.1
+[0m[0m[1m[32m   Compiling[0m syn v1.0.36
+[0m[0m[1m[32m   Compiling[0m serde_derive v1.0.114
+[0m[0m[1m[32m   Compiling[0m serde v1.0.114
+[0m[0m[1m[32m   Compiling[0m byte-slice-cast v0.3.5
+[0m[0m[1m[32m   Compiling[0m arrayvec v0.5.1
+[0m[0m[1m[32m   Compiling[0m memchr v2.3.3
+[0m[0m[1m[32m   Compiling[0m crunchy v0.2.2
+[0m[0m[1m[32m   Compiling[0m byteorder v1.3.4
+[0m[0m[1m[32m   Compiling[0m cfg-if v0.1.10
+[0m[0m[1m[32m   Compiling[0m lazy_static v1.4.0
+[0m[0m[1m[32m   Compiling[0m static_assertions v1.1.0
+[0m[0m[1m[32m   Compiling[0m sp-std v2.0.0
+[0m[0m[1m[32m   Compiling[0m autocfg v1.0.0
+[0m[0m[1m[32m   Compiling[0m regex-syntax v0.6.18
+[0m[0m[1m[32m   Compiling[0m rustc-hex v2.1.0
+[0m[0m[1m[32m   Compiling[0m tracing-core v0.1.16
+[0m[0m[1m[32m   Compiling[0m parity-util-mem v0.7.0
+[0m[0m[1m[32m   Compiling[0m log v0.4.11
+[0m[0m[1m[32m   Compiling[0m zeroize v1.1.0
+[0m[0m[1m[32m   Compiling[0m hash-db v0.15.2
+[0m[0m[1m[32m   Compiling[0m proc-macro-hack v0.5.18
+[0m[0m[1m[32m   Compiling[0m either v1.6.1
+[0m[0m[1m[32m   Compiling[0m integer-sqrt v0.1.3
+[0m[0m[1m[32m   Compiling[0m arrayvec v0.4.12
+[0m[0m[1m[32m   Compiling[0m nodrop v0.1.14
+[0m[0m[1m[32m   Compiling[0m constant_time_eq v0.1.5
+[0m[0m[1m[32m   Compiling[0m bitmask v0.5.0
+[0m[0m[1m[32m   Compiling[0m smallvec v1.4.1
+[0m[0m[1m[32m   Compiling[0m pin-project-internal v0.4.23
+[0m[0m[1m[32m   Compiling[0m futures-sink v0.3.5
+[0m[0m[1m[32m   Compiling[0m futures-core v0.3.5
+[0m[0m[1m[32m   Compiling[0m pin-utils v0.1.0
+[0m[0m[1m[32m   Compiling[0m futures-task v0.3.5
+[0m[0m[1m[32m   Compiling[0m futures-io v0.3.5
+[0m[0m[1m[32m   Compiling[0m substrate-wasm-builder-runner v2.0.0
+[0m[0m[1m[32m   Compiling[0m safe-mix v1.0.1
+[0m[0m[1m[32m   Compiling[0m fixed-hash v0.6.1
+[0m[0m[1m[32m   Compiling[0m thread_local v1.0.1
+[0m[0m[1m[32m   Compiling[0m secrecy v0.6.0
+[0m[0m[1m[32m   Compiling[0m num-traits v0.2.12
+[0m[0m[1m[32m   Compiling[0m tracing v0.1.19
+[0m[0m[1m[32m   Compiling[0m futures-channel v0.3.5
+[0m[0m[1m[32m   Compiling[0m node-template-runtime v2.0.0 (/Users/collin/collin/code/substrate-template/substrate-node-template/runtime)
+[0m[0m[1m[32m   Compiling[0m hash256-std-hasher v0.15.2
+[0m[0m[1m[32m   Compiling[0m paste-impl v0.1.18
+[0m[0m[1m[32m   Compiling[0m uint v0.8.3
+[0m[0m[1m[32m   Compiling[0m aho-corasick v0.7.13
+[0m[0m[1m[32m   Compiling[0m blake2-rfc v0.2.18
+[0m[0m[1m[32m   Compiling[0m quote v1.0.7
+[0m[0m[1m[32m   Compiling[0m paste v0.1.18
+[0m[0m[1m[32m   Compiling[0m regex v1.3.9
+[0m[0m[1m[32m   Compiling[0m Inflector v0.11.4
+[0m[0m[1m[32m   Compiling[0m synstructure v0.12.4
+[0m[0m[1m[32m   Compiling[0m ref-cast-impl v1.0.2
+[0m[0m[1m[32m   Compiling[0m sp-debug-derive v2.0.0
+[0m[0m[1m[32m   Compiling[0m impl-trait-for-tuples v0.1.3
+[0m[0m[1m[32m   Compiling[0m parity-util-mem-derive v0.1.0
+[0m[0m[1m[32m   Compiling[0m derive_more v0.99.9
+[0m[0m[1m[32m   Compiling[0m frame-support-procedural-tools-derive v2.0.0
+[0m[0m[1m[32m   Compiling[0m ref-cast v1.0.2
+[0m[0m[1m[32m   Compiling[0m pin-project v0.4.23
+[0m[0m[1m[32m   Compiling[0m futures-util v0.3.5
+[0m[0m[1m[32m   Compiling[0m futures v0.3.5
+[0m[0m[1m[32m   Compiling[0m toml v0.5.6
+[0m[0m[1m[32m   Compiling[0m proc-macro-crate v0.1.5
+[0m[0m[1m[32m   Compiling[0m frame-support-procedural-tools v2.0.0
+[0m[0m[1m[32m   Compiling[0m parity-scale-codec-derive v1.2.1
+[0m[0m[1m[32m   Compiling[0m sp-runtime-interface-proc-macro v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-api-proc-macro v2.0.0
+[0m[0m[1m[32m   Compiling[0m frame-support-procedural v2.0.0
+[0m[0m[1m[32m   Compiling[0m parity-scale-codec v1.3.4
+[0m[0m[1m[32m   Compiling[0m impl-codec v0.4.2
+[0m[0m[1m[32m   Compiling[0m sp-wasm-interface v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-storage v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-tracing v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-arithmetic v2.0.0
+[0m[0m[1m[32m   Compiling[0m finality-grandpa v0.12.3
+[0m[0m[1m[32m   Compiling[0m primitive-types v0.7.2
+[0m[0m[1m[32m   Compiling[0m sp-runtime-interface v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-core v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-inherents v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-io v2.0.0
+[0m[0m[1m[32m   Compiling[0m frame-metadata v12.0.0
+[0m[0m[1m[32m   Compiling[0m sp-finality-tracker v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-application-crypto v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-runtime v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-version v2.0.0
+[0m[0m[1m[32m   Compiling[0m frame-support v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-staking v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-authorship v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-api v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-timestamp v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-session v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-finality-grandpa v2.0.0
+[0m[0m[1m[32m   Compiling[0m frame-system-rpc-runtime-api v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-offchain v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-transaction-pool v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-block-builder v2.0.0
+[0m[0m[1m[32m   Compiling[0m sp-consensus-aura v0.8.0
+[0m[0m[1m[32m   Compiling[0m frame-system v2.0.0
+[0m[0m[1m[32m   Compiling[0m pallet-transaction-payment-rpc-runtime-api v2.0.0
+[0m[0m[1m[32m   Compiling[0m pallet-timestamp v2.0.0
+[0m[0m[1m[32m   Compiling[0m pallet-authorship v2.0.0
+[0m[0m[1m[32m   Compiling[0m pallet-finality-tracker v2.0.0
+[0m[0m[1m[32m   Compiling[0m pallet-randomness-collective-flip v2.0.0
+[0m[0m[1m[32m   Compiling[0m pallet-transaction-payment v2.0.0
+[0m[0m[1m[32m   Compiling[0m pallet-template v2.0.0 (/Users/collin/collin/code/substrate-template/substrate-node-template/pallets/template)
+[0m[0m[1m[32m   Compiling[0m pallet-balances v2.0.0
+[0m[0m[1m[32m   Compiling[0m frame-executive v2.0.0
+[0m[0m[1m[32m   Compiling[0m pallet-sudo v2.0.0
+[0m[0m[1m[32m   Compiling[0m pallet-session v2.0.0
+[0m[0m[1m[32m   Compiling[0m pallet-grandpa v2.0.0
+[0m[0m[1m[32m   Compiling[0m pallet-aura v2.0.0
+[0m[0m[1m[32m   Compiling[0m node-template-runtime-wasm v1.0.0 (/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/wbuild/node-template-runtime)
+[0m[0m[1m[32m    Finished[0m release [optimized] target(s) in 2m 14s

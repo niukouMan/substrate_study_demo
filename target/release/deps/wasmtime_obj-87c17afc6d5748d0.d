@@ -1,0 +1,14 @@
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/wasmtime_obj-87c17afc6d5748d0.rmeta: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/builder.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/context.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/data_segment.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/module.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/table.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/libwasmtime_obj-87c17afc6d5748d0.rlib: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/builder.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/context.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/data_segment.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/module.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/table.rs
+
+/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/wasmtime_obj-87c17afc6d5748d0.d: /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/lib.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/builder.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/context.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/data_segment.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/module.rs /Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/table.rs
+
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/lib.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/builder.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/context.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/data_segment.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/module.rs:
+/Users/collin/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/wasmtime-obj-0.19.0/src/table.rs:
+
+# env-dep:CARGO_PKG_VERSION=0.19.0
