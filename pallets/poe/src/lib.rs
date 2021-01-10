@@ -25,7 +25,7 @@ mod mock;
 #[cfg(test)]
 mod tests;
 //存证内容最大长度
-pub const MaxLength : u32 = 5;
+pub const MAX_LENGTH : u32 = 5;
 
 /// The pallet's configuration trait.
 pub trait Trait: system::Trait {
@@ -79,7 +79,7 @@ decl_module! {
 
 			ensure!(!Proofs::<T>::contains_key(&claim), Error::<T>::DuplicateClaim);
 
-            ensure!(MaxLength >=claim.len() as u32,Error::<T>::ProofTooLong);
+            ensure!(MAX_LENGTH >=claim.len() as u32,Error::<T>::ProofTooLong);
 
 			Proofs::<T>::insert(&claim, (sender.clone(), system::Module::<T>::block_number()));
 

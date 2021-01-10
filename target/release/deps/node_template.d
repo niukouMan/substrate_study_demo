@@ -1,6 +1,6 @@
-/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/node_template: node/src/main.rs node/src/chain_spec.rs node/src/service.rs node/src/cli.rs node/src/command.rs node/src/rpc.rs
+/Users/collin/collin/code/class/substrate-01/substrate_study_demo/target/release/deps/node_template: node/src/main.rs node/src/chain_spec.rs node/src/service.rs node/src/cli.rs node/src/command.rs node/src/rpc.rs
 
-/Users/collin/collin/code/substrate-template/substrate-node-template/target/release/deps/node_template.d: node/src/main.rs node/src/chain_spec.rs node/src/service.rs node/src/cli.rs node/src/command.rs node/src/rpc.rs
+/Users/collin/collin/code/class/substrate-01/substrate_study_demo/target/release/deps/node_template.d: node/src/main.rs node/src/chain_spec.rs node/src/service.rs node/src/cli.rs node/src/command.rs node/src/rpc.rs
 
 node/src/main.rs:
 node/src/chain_spec.rs:

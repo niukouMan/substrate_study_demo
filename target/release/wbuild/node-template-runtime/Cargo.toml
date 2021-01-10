@@ -9,5 +9,5 @@
 				crate-type = ["cdylib"]
 
 				[dependencies]
-				wasm_project = { package = "node-template-runtime", path = "/Users/collin/collin/code/substrate-template/substrate-node-template/runtime", default-features = false, features = [  ] }
+				wasm_project = { package = "node-template-runtime", path = "/Users/collin/collin/code/class/substrate-01/substrate_study_demo/runtime", default-features = false, features = [  ] }
 			
