@@ -263,9 +263,14 @@ impl pallet_sudo::Trait for Runtime {
 	type Call = Call;
 }
 
+//parameter_types! {
+//	pub KittyIndex: u32 = 0;
+//}
+
 impl pallet_kitties::Trait for Runtime{
 	type Event = Event;
 	type Randomness = RandomnessCollectiveFlip;
+	//type KittyIndex = KittyIndex;
 }
 
 impl pallet_poe::Trait for Runtime{

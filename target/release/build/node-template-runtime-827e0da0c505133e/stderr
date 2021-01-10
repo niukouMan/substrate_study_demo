@@ -1,15 +1,24 @@
-    Finished release [optimized] target(s) in 0.02s
+    Finished release [optimized] target(s) in 0.09s
      Running `/Users/collin/collin/code/class/substrate-01/substrate_study_demo/target/release/wbuild-runner/node-template-runtime12617245872359983921/target/x86_64-apple-darwin/release/wasm-build-runner-impl`
-[0m[1m[33mwarning[0m[0m[1m: constant `MaxLength` should have an upper case name[0m
-[0m  [0m[0m[1m[38;5;12m--> [0m[0m/Users/collin/collin/code/class/substrate-01/substrate_study_demo/pallets/poe/src/lib.rs:28:11[0m
-[0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m28[0m[0m [0m[0m[1m[38;5;12m| [0m[0mpub const MaxLength : u32 = 5;[0m
-[0m   [0m[0m[1m[38;5;12m| [0m[0m          [0m[0m[1m[33m^^^^^^^^^[0m[0m [0m[0m[1m[33mhelp: convert the identifier to upper case: `MAX_LENGTH`[0m
-[0m   [0m[0m[1m[38;5;12m|[0m
-[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(non_upper_case_globals)]` on by default[0m
+[0m[0m[1m[32m   Compiling[0m pallet-kitties v2.0.0 (/Users/collin/collin/code/class/substrate-01/substrate_study_demo/pallets/kitties)
+[0m[1m[33mwarning[0m[0m[1m: unused variable: `owner`[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0m/Users/collin/collin/code/class/substrate-01/substrate_study_demo/pallets/kitties/src/lib.rs:167:30[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m167[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    fn update_kitty_owner_count(owner:&T::AccountId){[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m                                [0m[0m[1m[33m^^^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_owner`[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_variables)]` on by default[0m
 
-[0m[1m[33mwarning[0m[0m[1m: 1 warning emitted[0m
+[0m[1m[33mwarning[0m[0m[1m: associated function is never used: `update_kitty_owner_count`[0m
+[0m   [0m[0m[1m[38;5;12m--> [0m[0m/Users/collin/collin/code/class/substrate-01/substrate_study_demo/pallets/kitties/src/lib.rs:167:5[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m167[0m[0m [0m[0m[1m[38;5;12m| [0m[0m    fn update_kitty_owner_count(owner:&T::AccountId){[0m
+[0m    [0m[0m[1m[38;5;12m| [0m[0m       [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m    [0m[0m[1m[38;5;12m|[0m
+[0m    [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(dead_code)]` on by default[0m
 
 [0m[0m[1m[32m   Compiling[0m node-template-runtime v2.0.0 (/Users/collin/collin/code/class/substrate-01/substrate_study_demo/runtime)
+[0m[1m[33mwarning[0m[0m[1m: 2 warnings emitted[0m
+
 [0m[0m[1m[32m   Compiling[0m node-template-runtime-wasm v1.0.0 (/Users/collin/collin/code/class/substrate-01/substrate_study_demo/target/release/wbuild/node-template-runtime)
-[0m[0m[1m[32m    Finished[0m release [optimized] target(s) in 5.73s
+[0m[0m[1m[32m    Finished[0m release [optimized] target(s) in 7.06s

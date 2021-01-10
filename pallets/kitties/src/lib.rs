@@ -2,11 +2,11 @@
 
 use codec::{Encode, Decode};
 use frame_support::{decl_module, decl_storage, decl_event, decl_error, ensure,
-					traits::Randomness,
-};
+					traits::Randomness,};
 use frame_system::{ensure_signed};
 use sp_runtime::DispatchError;
 use sp_io::hashing::blake2_128;
+use sp_std::prelude::*;
 
 //定义kitty索引
 type KittyIndex = u32;
@@ -15,10 +15,27 @@ type KittyIndex = u32;
 #[derive(Encode, Decode)]
 pub struct Kitty(pub [u8; 16]);
 
+//kitty parent信息
+#[derive(Encode,Decode)]
+pub struct KittyParent{
+	pub father:KittyIndex,
+	pub mother:KittyIndex,
+}
+
+//kitty相关信息
+#[derive(Encode,Decode)]
+pub struct KittyFamily{
+	pub parent:KittyParent,
+	pub wife:KittyIndex,
+	pub brothers:Vec<KittyIndex>,
+	pub children:Vec<KittyIndex>,
+}
+
 pub trait Trait: frame_system::Trait {
 	type Event: From<Event<Self>> + Into<<Self as frame_system::Trait>::Event>;
 	//随机数
 	type Randomness: Randomness<Self::Hash>;
+    //type KittyIndex: u32;
 }
 
 decl_storage! {
@@ -29,6 +46,11 @@ decl_storage! {
 		pub KittiesCount get(fn kitties_count): KittyIndex;
 		//kitty与所有者映射关系
 		pub KittyOwners get(fn kitty_owner): map hasher(blake2_128_concat) KittyIndex => Option<T::AccountId>;
+	    //通过账户拥有的kitty个数
+	    pub OwnedKittiesCount get(fn owned_kitties_count): map hasher(blake2_128_concat) T::AccountId => u32;
+
+	    //账户下所有的kitty
+	    pub OwnedKitties get(fn owned_kitties): map hasher(blake2_128_concat)  T::AccountId => Vec<KittyIndex>;
 	}
 }
 
@@ -140,6 +162,12 @@ impl<T: Trait> Module<T> {
 		);
 		payload.using_encoded(blake2_128) // 128 bit
 	}
+
+	//更新拥有者拥有的kitty数量
+	fn update_kitty_owner_count(owner:&T::AccountId){
+
+	}
+
 }
 
 #[cfg(test)]
