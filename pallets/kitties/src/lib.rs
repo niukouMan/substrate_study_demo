@@ -2,16 +2,16 @@
 
 use codec::{Encode, Decode};
 use frame_support::{decl_module, decl_storage, decl_event, decl_error, ensure,
-					traits::Randomness,};
+					traits::{Randomness,Get}};
 use frame_system::{ensure_signed};
 use sp_runtime::DispatchError;
 use sp_io::hashing::blake2_128;
 use sp_std::prelude::*;
 
 //定义kitty索引
-type KittyIndex = u32;
+//type KittyIndex = u32;
 
-//定义kitty结构体
+//定义kitty元组结构体
 #[derive(Encode, Decode)]
 pub struct Kitty(pub [u8; 16]);
 
@@ -35,7 +35,7 @@ pub trait Trait: frame_system::Trait {
 	type Event: From<Event<Self>> + Into<<Self as frame_system::Trait>::Event>;
 	//随机数
 	type Randomness: Randomness<Self::Hash>;
-    //type KittyIndex: u32;
+    type KittyIndex: Get<u32>;
 }
 
 decl_storage! {
@@ -49,8 +49,11 @@ decl_storage! {
 	    //通过账户拥有的kitty个数
 	    pub OwnedKittiesCount get(fn owned_kitties_count): map hasher(blake2_128_concat) T::AccountId => u32;
 
+
 	    //账户下所有的kitty
 	    pub OwnedKitties get(fn owned_kitties): map hasher(blake2_128_concat)  T::AccountId => Vec<KittyIndex>;
+	    //kitty成员信息（parent,wife,brothers,children）
+	    pub KittyFamilyInfo get(fn kitty_faily_info): map hasher(blake2_128_concat) KittyIndex => Option<KittyFamily>;
 	}
 }
 
@@ -86,6 +89,7 @@ decl_module! {
             let kitty = Kitty(dna);
 
             Self::insert_kitty(&sender, kitty_id, kitty);
+            Self::update_kitty_owner_count(&sender,true);
 			Self::deposit_event(RawEvent::Created(sender, kitty_id));
 		}
 
@@ -96,6 +100,8 @@ decl_module! {
             let account_id = Self::kitty_owner(kitty_id).ok_or(Error::<T>::InvalidKittyId)?; // todo course bug，没有验证所有者
             ensure!(account_id == sender.clone(), Error::<T>::NotKittyOwner);
             <KittyOwners<T>>::insert(kitty_id, to.clone());
+            Self::update_kitty_owner_count(&sender,true);
+            Self::update_kitty_owner_count(to,false);
 			Self::deposit_event(RawEvent::Transferred(sender, to, kitty_id));
 		}
 
@@ -164,8 +170,14 @@ impl<T: Trait> Module<T> {
 	}
 
 	//更新拥有者拥有的kitty数量
-	fn update_kitty_owner_count(owner:&T::AccountId){
-
+	fn update_kitty_owner_count(owner:&T::AccountId,is_add:bool){
+		owned_kitties_count::get(owner);
+		let (kitty_count,_)= OwnedKittiesCount::<T>::get(AccountId);
+		if is_add {
+			OwnedKittiesCount::put(owner,kitty_count+1);
+		}else{
+			OwnedKittiesCount::put(owner,kitty_count-1);
+		}
 	}
 
 }
@@ -270,4 +282,7 @@ mod tests {
                 );
 		})
 	}
+
+
+
 }

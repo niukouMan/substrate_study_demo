@@ -270,11 +270,17 @@ impl pallet_sudo::Trait for Runtime {
 impl pallet_kitties::Trait for Runtime{
 	type Event = Event;
 	type Randomness = RandomnessCollectiveFlip;
-	//type KittyIndex = KittyIndex;
+	type KittyIndex = u32;
+}
+
+// 附加题答案
+parameter_types! {
+	pub const MaxClaimLength: u32 = 256;
 }
 
 impl pallet_poe::Trait for Runtime{
 	type Event = Event;
+	type MaxClaimLength = MaxClaimLength;
 }
 
 /// Configure the template pallet in pallets/template.

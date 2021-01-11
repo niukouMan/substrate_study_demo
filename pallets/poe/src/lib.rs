@@ -11,6 +11,7 @@ use frame_support::{
 	decl_error,
 	ensure,
 	dispatch::{DispatchResult},
+	traits::Get,
 };
 use frame_system::{
 	self as system,
@@ -25,12 +26,13 @@ mod mock;
 #[cfg(test)]
 mod tests;
 //存证内容最大长度
-pub const MAX_LENGTH : u32 = 5;
+//pub const MaxClaimLength : u32 = 5;
 
 /// The pallet's configuration trait.
 pub trait Trait: system::Trait {
 	/// The overarching event type.
 	type Event: From<Event<Self>> + Into<<Self as system::Trait>::Event>;
+	type MaxClaimLength: Get<u32>;
 }
 
 // This pallet's storage items.
@@ -79,7 +81,7 @@ decl_module! {
 
 			ensure!(!Proofs::<T>::contains_key(&claim), Error::<T>::DuplicateClaim);
 
-            ensure!(MAX_LENGTH >=claim.len() as u32,Error::<T>::ProofTooLong);
+            ensure!(T::MaxClaimLength::get() >=claim.len() as u32,Error::<T>::ProofTooLong);
 
 			Proofs::<T>::insert(&claim, (sender.clone(), system::Module::<T>::block_number()));
 
