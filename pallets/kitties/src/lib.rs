@@ -9,7 +9,7 @@ use sp_io::hashing::blake2_128;
 use sp_std::prelude::*;
 
 //定义kitty索引
-//type KittyIndex = u32;
+type KittyIndex = u32;
 
 //定义kitty元组结构体
 #[derive(Encode, Decode)]
