@@ -263,17 +263,16 @@ impl pallet_sudo::Trait for Runtime {
 	type Call = Call;
 }
 
-//parameter_types! {
-//	pub KittyIndex: u32 = 0;
-//}
+parameter_types! {
+	pub const KittyIndex: u32;
+}
 
 impl pallet_kitties::Trait for Runtime{
 	type Event = Event;
 	type Randomness = RandomnessCollectiveFlip;
-	type KittyIndex = u32;
+	type KittyIndex = KittyIndex;
 }
 
-// 附加题答案
 parameter_types! {
 	pub const MaxClaimLength: u32 = 256;
 }
