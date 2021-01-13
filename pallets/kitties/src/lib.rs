@@ -23,7 +23,7 @@ pub struct Kitty(pub [u8; 16]);
 //	pub mother:T::KittyIndex,
 //}
 
-//kitty相关信息
+//kitty family成员信息
 //#[derive(Encode,Decode)]
 //pub struct KittyFamily<T: Trait>{
 //	pub parent:KittyParent,
@@ -57,6 +57,12 @@ decl_storage! {
 
 	    //kitty成员信息（parent,wife,brothers,children）
 	   // pub KittyFamilyInfo get(fn kitty_faily_info): map hasher(blake2_128_concat) T::KittyIndex => Option<KittyFamily<T>>;
+	   // 猫的父母
+		pub KittyParents get(fn kitty_parents):map hasher(blake2_128_concat) T::KittyIndex => Option<(T::KittyIndex, T::KittyIndex)>;
+		// 猫的孩子
+		pub KittyChildren get(fn kitty_children):double_map hasher(blake2_128_concat) T::KittyIndex, hasher(blake2_128_concat) T::KittyIndex => Option<T::KittyIndex>;
+		// 猫的伴侣
+		pub KittyPartners get(fn kitty_partners):double_map hasher(blake2_128_concat) T::KittyIndex, hasher(blake2_128_concat) T::KittyIndex => Option<T::KittyIndex>;
 	}
 }
 
@@ -94,7 +100,7 @@ decl_module! {
             let kitty = Kitty(dna);
             //质押资产
 			T::Currency::reserve(&sender, T::NewKittyReserve::get()).map_err(|_| Error::<T>::MoneyNotEnough )?;
-            Self::insert_kitty(&sender, kitty_id, kitty);
+            Self::insert_kitty(&sender, kitty_id, kitty,None);
 			Self::deposit_event(RawEvent::Created(sender, kitty_id));
 		}
 
@@ -151,19 +157,31 @@ impl<T: Trait> Module<T> {
 		for i in 0..kitty_1_dna.len() {
 			new_dna[i] = combine_dna(kitty_1_dna[i], kitty_2_dna[i], selector[i]);
 		}
-		Self::insert_kitty(sender, kitty_id, Kitty(new_dna));
+		Self::insert_kitty(sender, kitty_id, Kitty(new_dna),Some((kitty_id_1, kitty_id_2)));
 		Ok(kitty_id)
 	}
 
 	// 插入
-	fn insert_kitty(owner: &T::AccountId, kitty_id: T::KittyIndex, kitty: Kitty) {
+	fn insert_kitty(owner: &T::AccountId, kitty_id: T::KittyIndex, kitty: Kitty, parent: Option<(T::KittyIndex, T::KittyIndex)>) {
 		<Kitties::<T>>::insert(kitty_id, kitty);
 		<KittiesCount::<T>>::put(kitty_id + 1.into());
 		<KittyOwners::<T>>::insert(kitty_id, owner);
         // 保存拥有者拥有的 Kitty 数据
         <OwnedKitties::<T>>::insert(owner, kitty_id, kitty_id);
-        //todo 保存kitty家庭成员关系
-
+        //保存kitty家庭成员关系
+		match parent {
+			Some((parent_id1, parent_id2)) =>{
+				// 保存 kitty 的父母
+				<KittyParents::<T>>::insert(kitty_id, (parent_id1, parent_id2) );
+				// 保存父母的孩子
+				<KittyChildren::<T>>::insert(parent_id1, kitty_id, kitty_id);
+				<KittyChildren::<T>>::insert(parent_id2, kitty_id, kitty_id);
+				// 保存父母的伴侣关系
+				<KittyPartners::<T>>::insert(parent_id1, parent_id2, parent_id2);
+				<KittyPartners::<T>>::insert(parent_id2, parent_id1, parent_id1);
+			}
+			_ => (),
+		}
 
 	}
 
