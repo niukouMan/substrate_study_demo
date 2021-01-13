@@ -264,14 +264,13 @@ impl pallet_sudo::Trait for Runtime {
 }
 
 parameter_types! {
-	pub const KittyIndex: u32;
     pub const NewKittyReserve: u64 = 5_000;
 }
 
 impl pallet_kitties::Trait for Runtime{
 	type Event = Event;
 	type Randomness = RandomnessCollectiveFlip;
-	type KittyIndex = KittyIndex;
+	type KittyIndex = u32;
 	type NewKittyReserve = NewKittyReserve;
 	type Currency = Balances;
 }

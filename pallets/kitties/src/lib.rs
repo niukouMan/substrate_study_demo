@@ -2,7 +2,7 @@
 
 use codec::{Encode, Decode};
 use frame_support::{decl_module,decl_storage, decl_event, decl_error, StorageValue, ensure, StorageMap, Parameter,
-					traits::{Currency,Randomness, ReservableCurrency}
+					traits::{Currency,Randomness,Get, ReservableCurrency}
 };
 use frame_system::{ensure_signed};
 use sp_io::hashing::blake2_128;
@@ -10,27 +10,29 @@ use sp_std::prelude::*;
 use sp_runtime::{DispatchError,traits::{AtLeast32Bit,Bounded}};
 
 //定义kitty索引
-type KittyIndex = u32;
+//type KittyIndex = u32;
 
 //定义kitty元组结构体
 #[derive(Encode, Decode)]
 pub struct Kitty(pub [u8; 16]);
 
 //kitty parent信息
-#[derive(Encode,Decode)]
-pub struct KittyParent{
-	pub father:KittyIndex,
-	pub mother:KittyIndex,
-}
+//#[derive(Encode,Decode)]
+//pub struct KittyParent<T: Trait>{
+//	pub father:T::KittyIndex,
+//	pub mother:T::KittyIndex,
+//}
 
 //kitty相关信息
-#[derive(Encode,Decode)]
-pub struct KittyFamily{
-	pub parent:KittyParent,
-	pub wife:KittyIndex,
-	pub brothers:Vec<KittyIndex>,
-	pub children:Vec<KittyIndex>,
-}
+//#[derive(Encode,Decode)]
+//pub struct KittyFamily<T: Trait>{
+//	pub parent:KittyParent,
+//	pub wife:T::KittyIndex,
+//	pub brothers:Vec<T::KittyIndex>,
+//	pub children:Vec<T::KittyIndex>,
+//}
+
+type BalanceOf<T> = <<T as Trait>::Currency as Currency<<T as frame_system::Trait>::AccountId>>::Balance;
 
 pub trait Trait: frame_system::Trait {
 	type Event: From<Event<Self>> + Into<<Self as frame_system::Trait>::Event>;
@@ -50,18 +52,16 @@ decl_storage! {
 		pub KittiesCount get(fn kitties_count): T::KittyIndex;
 		//kitty与所有者映射关系
 		pub KittyOwners get(fn kitty_owner): map hasher(blake2_128_concat) T::KittyIndex => Option<T::AccountId>;
-	    //通过账户拥有的kitty个数
-	   // pub OwnedKittiesCount get(fn owned_kitties_count): map hasher(blake2_128_concat) T::AccountId => u32;
+		// 记录某个拥有者与猫之间的关系
+		pub OwnedKitties get(fn owned_kitties):double_map hasher(blake2_128_concat) T::AccountId, hasher(blake2_128_concat) T::KittyIndex => Option<T::KittyIndex>;
 
-	    //账户下所有的kitty
-	    pub OwnedKitties get(fn owned_kitties): map hasher(blake2_128_concat)  T::AccountId => mut Vec<T::KittyIndex>;
 	    //kitty成员信息（parent,wife,brothers,children）
-	    pub KittyFamilyInfo get(fn kitty_faily_info): map hasher(blake2_128_concat) T::KittyIndex => Option<KittyFamily>;
+	   // pub KittyFamilyInfo get(fn kitty_faily_info): map hasher(blake2_128_concat) T::KittyIndex => Option<KittyFamily<T>>;
 	}
 }
 
 decl_event!(
-	pub enum Event<T> where AccountId = <T as frame_system::Trait>::AccountId {
+	pub enum Event<T> where AccountId = <T as frame_system::Trait>::AccountId, KittyIndex = <T as Trait>::KittyIndex {
 	    //创建kitty事件
 		Created(AccountId, KittyIndex),
 		//transfer kitty事件
@@ -95,7 +95,6 @@ decl_module! {
             //质押资产
 			T::Currency::reserve(&sender, T::NewKittyReserve::get()).map_err(|_| Error::<T>::MoneyNotEnough )?;
             Self::insert_kitty(&sender, kitty_id, kitty);
-            Self::update_kitty_owner_count(&sender,true);
 			Self::deposit_event(RawEvent::Created(sender, kitty_id));
 		}
 
@@ -112,8 +111,9 @@ decl_module! {
 			T::Currency::unreserve(&sender, T::NewKittyReserve::get());
 
             <KittyOwners<T>>::insert(kitty_id, to.clone());
-            Self::update_kitty_owner_count(&sender,true);
-            Self::update_kitty_owner_count(&to,false);
+            // 从之前的拥有人中删除关系
+			OwnedKitties::<T>::remove(&sender, kitty_id);
+			OwnedKitties::<T>::insert(&to, kitty_id, kitty_id);
 			Self::deposit_event(RawEvent::Transferred(sender, to, kitty_id));
 		}
 
@@ -160,11 +160,16 @@ impl<T: Trait> Module<T> {
 		<Kitties::<T>>::insert(kitty_id, kitty);
 		<KittiesCount::<T>>::put(kitty_id + 1.into());
 		<KittyOwners::<T>>::insert(kitty_id, owner);
+        // 保存拥有者拥有的 Kitty 数据
+        <OwnedKitties::<T>>::insert(owner, kitty_id, kitty_id);
+        //todo 保存kitty家庭成员关系
+
+
 	}
 
 	//计算下一个kitty索引
-	fn next_kitty_id() -> sp_std::result::Result<T::KittyIndex, DispatchError> {
-		let kitty_id = Self::kitties_count(); // 获取
+	fn next_kitty_id() -> sp_std::result::Result<T::KittyIndex, DispatchError>{
+		let kitty_id = Self::kitties_count();
 		if kitty_id == T::KittyIndex::max_value() {
 			return Err(Error::<T>::KittiesCountOverFlow.into());
 		}
@@ -179,26 +184,6 @@ impl<T: Trait> Module<T> {
 						<frame_system::Module<T>>::extrinsic_index(),
 		);
 		payload.using_encoded(blake2_128) // 128 bit
-	}
-
-	//更新拥有者拥有的kitty数量
-	fn update_kitty_owner_count(owner:&T::AccountId,kittyIndex:KittyIndex,is_add:bool){
-		let kitty_list:Vec<KittyIndex> = <OwnedKitties::<T>>::get(owner);
-		if is_add {
-			kitty_list.push(kittyIndex);
-		}else{
-			let index = -1;
-			for kitty_index in kitty_list {
-				if index==kitty_index {
-					index = kitty_index;
-					break;
-				}
-			}
-			if index!= -1 {
-				kitty_list.remove(index);
-			}
-			OwnedKittiesCount::insert(owner,kitty_count-1.into());
-		}
 	}
 
   }
