@@ -2,7 +2,7 @@
 
 use codec::{Encode, Decode};
 use frame_support::{decl_module,decl_storage, decl_event, decl_error, StorageValue, ensure, StorageMap, Parameter,
-					traits::{Currency,Randomness}
+					traits::{Currency,Randomness, ReservableCurrency}
 };
 use frame_system::{ensure_signed};
 use sp_io::hashing::blake2_128;
@@ -37,6 +37,9 @@ pub trait Trait: frame_system::Trait {
 	//随机数
 	type Randomness: Randomness<Self::Hash>;
 	type KittyIndex: Parameter + AtLeast32Bit + Bounded + Default + Copy;
+	type NewKittyReserve: Get<BalanceOf<Self>>;
+	// 用于质押等于资产
+	type Currency: Currency<Self::AccountId> + ReservableCurrency<Self::AccountId>;
 }
 
 decl_storage! {
@@ -71,7 +74,9 @@ decl_error! {
 		KittiesCountOverFlow,
 		InvalidKittyId,
 		RrquireDifferentParent,
-		NotKittyOwner
+		NotKittyOwner,
+		MoneyNotEnough,
+		UnReserveMoneyNotEnough,
 	}
 }
 
@@ -87,7 +92,8 @@ decl_module! {
 			let kitty_id = Self::next_kitty_id()?; // 取id
 			let dna = Self::random_value(&sender);
             let kitty = Kitty(dna);
-
+            //质押资产
+			T::Currency::reserve(&sender, T::NewKittyReserve::get()).map_err(|_| Error::<T>::MoneyNotEnough )?;
             Self::insert_kitty(&sender, kitty_id, kitty);
             Self::update_kitty_owner_count(&sender,true);
 			Self::deposit_event(RawEvent::Created(sender, kitty_id));
@@ -99,6 +105,12 @@ decl_module! {
             let sender = ensure_signed(origin)?;
             let account_id = Self::kitty_owner(kitty_id).ok_or(Error::<T>::InvalidKittyId)?;
             ensure!(account_id == sender.clone(), Error::<T>::NotKittyOwner);
+
+            // 质押被转让人的代币
+			T::Currency::reserve(&to, T::NewKittyReserve::get()).map_err(|_| Error::<T>::MoneyNotEnough )?;
+			// 解质押转出人的代币
+			T::Currency::unreserve(&sender, T::NewKittyReserve::get());
+
             <KittyOwners<T>>::insert(kitty_id, to.clone());
             Self::update_kitty_owner_count(&sender,true);
             Self::update_kitty_owner_count(&to,false);
@@ -182,119 +194,11 @@ impl<T: Trait> Module<T> {
 					break;
 				}
 			}
-
 			if index!= -1 {
-				kitty_list.re
+				kitty_list.remove(index);
 			}
-
-
 			OwnedKittiesCount::insert(owner,kitty_count-1.into());
 		}
 	}
 
-}
-
-#[cfg(test)]
-mod tests {
-	use super::*;
-	use sp_core::H256;
-	use frame_support::{impl_outer_origin, parameter_types, weights::Weight, assert_ok, assert_noop,
-						traits::{OnFinalize, OnInitialize},
-	};
-	use sp_runtime::{
-		traits::{BlakeTwo256, IdentityLookup}, testing::Header, Perbill,
-	};
-	use frame_system as system;
-
-	impl_outer_origin! {
-	    pub enum Origin for Test {}
-    }
-
-	#[derive(Clone, Eq, PartialEq)]
-	pub struct Test;
-	parameter_types! {
-        pub const BlockHashCount: u64 = 250;
-        pub const MaximumBlockWeight: Weight = 1024;
-        pub const MaximumBlockLength: u32 = 2 * 1024;
-        pub const AvailableBlockRatio: Perbill = Perbill::from_percent(75);
-    }
-
-	impl system::Trait for Test {
-		type BaseCallFilter = ();
-		type Origin = Origin;
-		type Call = ();
-		type Index = u64;
-		type BlockNumber = u64;
-		type Hash = H256;
-		type Hashing = BlakeTwo256;
-		type AccountId = u64;
-		type Lookup = IdentityLookup<Self::AccountId>;
-		type Header = Header;
-		type Event = ();
-		type BlockHashCount = BlockHashCount;
-		type MaximumBlockWeight = MaximumBlockWeight;
-		type DbWeight = ();
-		type BlockExecutionWeight = ();
-		type ExtrinsicBaseWeight = ();
-		type MaximumExtrinsicWeight = MaximumBlockWeight;
-		type MaximumBlockLength = MaximumBlockLength;
-		type AvailableBlockRatio = AvailableBlockRatio;
-		type Version = ();
-		type PalletInfo = ();
-		type AccountData = ();
-		type OnNewAccount = ();
-		type OnKilledAccount = ();
-		type SystemWeightInfo = ();
-	}
-
-	type Randomness = pallet_randomness_collective_flip::Module<Test>;
-
-	impl Trait for Test {
-		type Event = ();
-		type Randomness = Randomness;
-	}
-
-	pub type Kitties = Module<Test>;
-	pub type System = frame_system::Module<Test>;
-
-	fn run_to_block(n: u64) {
-		while System::block_number() < n {
-			Kitties::on_finalize(System::block_number());
-			System::on_finalize(System::block_number());
-			System::set_block_number(System::block_number() + 1);
-			System::on_initialize(System::block_number());
-			Kitties::on_initialize(System::block_number());
-		}
-	}
-
-	pub fn new_test_ext() -> sp_io::TestExternalities {
-		system::GenesisConfig::default().build_storage::<Test>().unwrap().into()
-	}
-
-	// 创建kitty
-	#[test]
-	fn owned_kitties_can_append_values() {
-		new_test_ext().execute_with(|| {
-			run_to_block(10);
-			assert_eq!(Kitties::create(Origin::signed(1)), Ok(()))
-		})
-	}
-
-	// transfer kitty
-	#[test]
-	fn transfer_kitties() {
-		new_test_ext().execute_with(|| {
-			run_to_block(10);
-			assert_ok!(Kitties::create(Origin::signed(1)));
-			let id = Kitties::kitties_count();
-			assert_ok!(Kitties::transfer(Origin::signed(1), 2 , id-1));
-			assert_noop!(
-                Kitties::transfer(Origin::signed(1), 2, id-1),
-                Error::<Test>::NotKittyOwner
-                );
-		})
-	}
-
-
-
-}
+  }
